@@ -164,20 +164,20 @@ ul>li {
 
 .column2 {
     flex: 30%;
-    padding: 16px;
+    padding: 63px 16px;
 }
 
 .column2>img {
-    width: 100%;
+    float: right;
 }
 
 .column3 {
     flex: 30%;
-    padding: 16px;
+    padding: 63px 16px;
 }
-.column3>img {
+/* .column3>img {
     width: 100%;
-}
+} */
 
 .column4 {
     flex: 70%;
@@ -222,6 +222,10 @@ ul>li {
 }
 
 @media (max-width:600px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .devide_border {
         display: block;
@@ -393,5 +397,14 @@ ul>li {
 
     .container_wraap {
         padding: 0 !important;
+    }
+
+    .column2>img {
+        float: unset;
+        width: 100%;
+    }
+
+    .column3>img {
+        width: 100%;
     }
 }
